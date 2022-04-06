@@ -1,1 +1,2 @@
 # pipelineGit
+pipeline ci/cd
