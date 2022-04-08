@@ -17,12 +17,16 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Steps represent a sequence of tasks that will be executed as part of the job. Each step must contain uses or run
     steps:
+    
     # It is an official GitHub Action used to check-out a repository so a workflow can access it
-    - uses: actions/checkout@v1
+    - name: Checkout the files
+      uses: actions/checkout@v1
+      
     - name: Run a one-line script
       run: echo Hello, world!
+      
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
